@@ -1,0 +1,298 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{xeCJK}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\pagestyle{empty}
+
+\geometry{left=1.5cm, right=1.5cm, top=1cm, bottom=1cm}
+
+\setCJKmainfont{FandolSong}
+\setlength{\parindent}{0pt}
+
+
+% ========== section ==========
+\newcommand{\resumeSection}[1]{
+\vspace{8pt}
+
+\noindent
+{\large\bfseries #1}
+
+\vspace{3pt}
+
+\noindent
+\hrule
+
+\vspace{8pt}
+}
+
+\begin{document}
+
+
+% ================= photo =================
+\begin{tikzpicture}[remember picture,overlay]
+
+\node[
+anchor=north east,
+xshift=-50pt,
+yshift=-10pt
+]
+at (current page.north east)
+{
+\includegraphics[width=2.5cm,height=3.2cm]{template.jpg}
+};
+
+\end{tikzpicture}
+
+\vspace{-5pt}
+
+{\fontsize{24pt}{28pt}\selectfont\textbf{Lorem Ipsum}}
+
+\vspace{10pt}
+
+{\large
+Phone: 123456789 | Email: lorem@ipsum.com
+}
+
+\vspace{6pt}
+
+
+% ================= Education =================
+\resumeSection{Lorem Ipsum}
+
+\begin{tabular*}{\textwidth}{
+@{\extracolsep{\fill}}
+l
+c
+r
+}
+
+YYYY.MM-YYYY.MM & \textbf{Lorem University} & \textbf{Lorem Master}
+
+\\[5pt]
+
+YYYY.MM-YYYY.MM & \textbf{Ipsum College} & \textbf{Lorem Bachelor}
+
+\end{tabular*}
+
+\vspace{3pt}
+
+{\small
+
+\begin{itemize}[
+leftmargin=1.2em,
+labelsep=0.5em,
+itemsep=1pt,
+topsep=0pt
+]
+
+\item
+\textbf{GPA:}
+Lorem ipsum dolor sit amet consectetur adipiscing elit.
+
+\item
+\textbf{Courses:}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+\end{itemize}
+}
+
+
+% ================= Experience =================
+\resumeSection{Lorem Ipsum}
+
+\begin{tabular*}{\textwidth}{
+@{\extracolsep{\fill}}
+l
+c
+r
+}
+
+YYYY.MM-YYYY.MM & \textbf{Lorem Company} & \textbf{Research Intern}
+
+\end{tabular*}
+
+\vspace{3pt}
+
+{\small
+
+\textbf{Description:}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam.
+
+\begin{itemize}[
+leftmargin=1.2em,
+labelsep=0.5em,
+itemsep=1pt,
+topsep=0pt,
+parsep=0pt
+]
+
+\item
+\textbf{Data Processing:}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Integer nec odio praesent libero sed cursus ante.
+
+\item
+\textbf{Model Training:}
+Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt.
+Ut labore et dolore magna aliqua.
+
+\item
+\textbf{Experiment Analysis:}
+Lorem ipsum dolor sit amet, quis nostrud exercitation ullamco laboris.
+Duis aute irure dolor in reprehenderit.
+
+\item
+\textbf{Evaluation:}
+Lorem ipsum dolor sit amet, voluptate velit esse cillum dolore.
+Excepteur sint occaecat cupidatat.
+
+\end{itemize}
+}
+
+
+% ================= Projects =================
+\resumeSection{Lorem Ipsum}
+
+\begin{tabular*}{\textwidth}{
+@{\extracolsep{\fill}}
+l
+c
+r
+}
+
+YYYY.MM-YYYY.MM & \textbf{Lorem Project} & \textbf{Project Leader}
+
+\end{tabular*}
+
+\vspace{3pt}
+
+{\small
+
+\textbf{Project Background:}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Praesent commodo cursus magna vel scelerisque nisl consectetur.
+
+\textbf{Technology Stack:}
+Python, LangChain, Database, Machine Learning
+
+\begin{itemize}[
+leftmargin=1.2em,
+labelsep=0.5em,
+itemsep=1pt,
+topsep=0pt,
+parsep=0pt
+]
+
+\item
+\textbf{Schema Retrieval:}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Mauris ipsum nulla facilisi.
+
+\item
+\textbf{System Design:}
+Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt.
+Ut labore et dolore magna aliqua.
+
+\item
+\textbf{Performance Optimization:}
+Lorem ipsum dolor sit amet, exercitation ullamco laboris nisi.
+Duis aute irure dolor.
+
+\item
+\textbf{Visualization:}
+Lorem ipsum dolor sit amet, reprehenderit in voluptate velit esse.
+Cillum dolore eu fugiat nulla pariatur.
+
+\end{itemize}
+
+}
+
+
+% ================= Second Project =================
+\begin{tabular*}{\textwidth}{
+@{\extracolsep{\fill}}
+l
+c
+r
+}
+
+YYYY.MM-YYYY.MM & \textbf{Lorem Competition Project} & \textbf{Project Leader}
+
+\end{tabular*}
+
+\vspace{3pt}
+
+{\small
+
+\textbf{Project Background:}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Integer posuere erat a ante venenatis dapibus.
+
+\textbf{Technology Stack:}
+Python, PyTorch, Librosa, EfficientNet
+
+\begin{itemize}[
+leftmargin=1.2em,
+labelsep=0.5em,
+itemsep=1pt,
+topsep=0pt,
+parsep=0pt
+]
+
+\item
+\textbf{Data Processing:}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Sed do eiusmod tempor incididunt ut labore.
+
+\item
+\textbf{Training Strategy:}
+Lorem ipsum dolor sit amet, minim veniam quis nostrud.
+Exercitation ullamco laboris.
+
+\item
+\textbf{Model Optimization:}
+Lorem ipsum dolor sit amet, consequat duis aute irure dolor.
+Reprehenderit voluptate.
+
+\end{itemize}
+
+}
+
+
+% ================= Skills =================
+\resumeSection{Lorem Ipsum}
+
+\begin{itemize}[
+leftmargin=1.2em,
+labelsep=0.5em,
+itemsep=1pt,
+topsep=0pt,
+parsep=0pt
+]
+
+\item
+\textbf{Programming Skills:}
+Lorem ipsum dolor sit amet, Python, SQL, Linux, Git.
+
+\item
+\textbf{Machine Learning:}
+Lorem ipsum dolor sit amet, deep learning,
+data analysis and artificial intelligence.
+
+\item
+\textbf{Engineering Skills:}
+Lorem ipsum dolor sit amet, software engineering,
+database and system development.
+
+\end{itemize}
+
+\end{document}
